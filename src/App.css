@@ -1,38 +1,116 @@
-.App {
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@100;400;600&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Raleway", sans-serif;
+}
+
+body {
+  background-color: rgb(230, 222, 240);
+}
+.nav-link {
+  font-size: 25px;
+  color: rgba(141, 118, 165, 0.911);
+  font-weight: 500;
+}
+.main-title {
+  font-size: 50px;
+  font-weight: 100;
+  font-style: italic;
+}
+/* CARD START */
+
+.card {
+  margin: 20px 5px;
+  height: 750px;
+  background-color: rgb(250, 248, 253);
+}
+.card-image {
+  height: 400px;
+}
+.card-title {
+  font-size: 20px;
+  font-weight: 600;
+}
+.card-author {
+  padding-bottom: 10px;
+  font-style: oblique;
+}
+.btn_details {
+  background-color: rgb(209, 181, 243);
+  color: rgb(0, 0, 0);
+  font-weight: 500;
+}
+.btn_details:hover {
+  background-color: rgb(146, 62, 248);
+  color: #fff;
+}
+.fav {
+  color: rgb(146, 62, 248);
+  font-size: 25px;
+}
+.fav-no {
+  color: rgb(107, 104, 104);
+}
+.fa-star:hover {
+  transform: scale(1.2);
+  cursor: pointer;
+}
+/* CARD END */
+/* DETAIL PAGE START*/
+
+.detail_header {
+  font-size: 50px;
+  font-weight: 100;
+  font-style: italic;
+}
+.detail_body {
+  background-color: rgb(209, 181, 243);
+  border-radius: 20px;
+  margin-bottom: 50px;
+}
+.detail_sub_title {
+  font-weight: 600;
+  font-size: 15px;
+}
+
+/* DETAIL PAGE START*/
+.alert {
+  font-size: 25px;
+  background-color: rgb(222, 191, 230);
+  margin: 20% 0;
   text-align: center;
+  font-style: italic;
 }
+.alert_fav {
+  background-color: rgb(233, 186, 245);
+  border: none;
+  box-shadow: 10px 10px 20px 0px rgb(53, 6, 65);
+  width: 350px;
+  position: fixed;
+  right: 20px;
+  z-index: 1000;
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+  font-style: italic;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+@media (max-width: 480px) {
+  .card {
+    height: 700px;
   }
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+@media (min-width: 481px) and (max-width: 768px) {
+  .card {
+    height: 700px;
   }
-  to {
-    transform: rotate(360deg);
+}
+@media (min-width: 769px) and (max-width: 1024px) {
+  .card {
+    height: 800px;
+  }
+}
+@media (min-width: 1025px) and (max-width: 1200px) {
+  .card {
+    height: 800px;
   }
 }
